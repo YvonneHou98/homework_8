@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--    document Title-->
+    <title>Contact Page | Yvonne's Portfolio</title>
+
+    <!--    Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/pic/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/pic/favicon_io/favicon-32x32.png">  
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/pic/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="Assets/pic/favicon_io/site.webmanifest">  
+    <meta name="theme-color" content="#ffffff">
+
+    <!--    Stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono%7cPT+Serif:400,400i%7cLato:100,300,400,700,800,900" rel="stylesheet">
+
+    <link href="Assets/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+    <!-- Add jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+
+  <body>
+    <div class="container-fluid" style="padding-left: 5%; padding-right: 5%; padding-top: 5%;">
+      <a href="index.html"><img src="Assets/pic/back.svg" style="float: left;"></a>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <h1><strong>Contact</strong></h1>
+          <p><strong>Tel:</strong> +1 (858)471-6550<br>
+          <strong>Email:</strong> yvonnehou98@gmail.com<br>
+          <strong>Location:</strong> Pittsburg, PA</p>
+
+          <a href="https://www.linkedin.com/in/yiwen-yvonne-hou-18866b15b/" target="_blank"><img src="Assets/pic/linkedin.svg" style="width: 24px; height:auto;"></a>
+          <a href="https://www.facebook.com/yvonne.hou.94" target="_blank"><img src="Assets/pic/facebook.svg" style="width: 24px; height:auto;"></a>
+          <a href="https://github.com/YvonneHou98" target="_blank"><img src="Assets/pic/github.svg" style="width: 24px; height:auto;"></a>
+          <br>
+          <br>
+
+          <form name="google form for contact" id="gform" class="zform mt-4" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSef8Ylbxo7bsQfIxk9lOFlGVzcApndsLOfKjn0NxmZ45Y1Prw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+            <input class="form-control border-300" type="hidden" name="to" value="username@domain.extension">
+            <input class="form-control border-300 mt-3" type="text" placeholder="Your Name" aria-label="Text input for your name" name="Your Name" id="Your Name">
+            <input class="form-control border-300 mt-3" type="text" placeholder="Your Email" aria-label="Text input for your email" name="Your Email" id="Your Email">
+            <textarea class="form-control border-300 mt-3" rows="11" placeholder="Your Message" aria-label="Text input for your message" required name="Your Message" id="Your Message"></textarea>
+            <button class="btn btn-block btn-dark mt-4" type="submit" value="Submit">Submit<span class="fa fa-paper-plane ml-1"></span></button>
+           <div class="zform-feedback mt-4"></div>
+          </form>
+          
+          <!-- submit google form JavaScripts-->
+          <script type="text/javascript">var submitted=false;</script>
+          <script type="text/javascript">
+            $('#gform').on('submit', function(e) {
+            $('#gform *').fadeOut(2000);
+            $('#gform').prepend('Your submission has been sent!');
+            });
+          </script>
+
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+        </div>
+
+        <!-- animation let's connect -->
+        <div class="col-md-6">
+          <div class="wrap">
+            <svg width="250" height="250" viewBox="0 0 100 100" class="circles">
+              <circle id="circle1" cx="50" cy="50" r="44" stroke="#000" stroke-width="3" stroke-dasharray="0 6" stroke-linecap="round" fill="transparent"/>
+              <circle id="circle2" cx="50" cy="50" r="38" stroke="#000" stroke-width="3" stroke-dasharray="0 6" stroke-linecap="round" fill="transparent"/>
+            </svg>
+            <h2>Let's Connect!</h2>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+  </body>
+ </html>
